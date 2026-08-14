@@ -51,10 +51,8 @@ export const metadata: Metadata = {
     title: `${DATA.name}`,
     card: "summary_large_image",
   },
-  verification: {
-    google: "",
-    yandex: "",
-  },
+  // To verify with Search Console's HTML-tag method, put the token here:
+  // verification: { google: "<token from Search Console>" },
 };
 
 export default function RootLayout({
