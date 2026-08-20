@@ -314,7 +314,7 @@ export const DATA = {
       title:
         "PRAXIS: Principled Reasoning via Agentic eXploration at Inference-time Scale",
       dates: "2026",
-      location: "Under Review, EMNLP 2026 LUHME Workshop",
+      location: "Under Review, EMNLP 2026 Workshop",
       description:
         "A training-free inference-time scaling framework that generates N trajectories under N distinct cognitive lenses, each grounded in a documented agent failure mode or in linguistic pragmatic theory (Grice's Maxims, Speech Act Theory). Achieves Oracle@16 of 0.993 on 150 real ABCD conversations with log-linear scaling, outperforming temperature sampling by 12-17 pp (exact McNemar p=0.0013), and identifies a false-consensus failure mode where random sampling degrades by 16.6 pp at N=16 while PRAXIS stays stable.",
       image: "",
@@ -324,7 +324,7 @@ export const DATA = {
       title:
         "When Is It Safe to Replay a Constructed Failure Knowledge Base? Context-Invariance as the Deciding Property",
       dates: "2026",
-      location: "Under Review, EMNLP 2026 AKBC Workshop",
+      location: "Under Review, EMNLP 2026 Workshop",
       description:
         "FAILGROUND, a deterministic pipeline that mines each detected agent failure into a typed Failure-Provenance Triple inside a failure-aware knowledge graph, with no LLM-as-judge and no external KG calls. Establishes context-invariance as the property deciding when replay is safe: literal replay ties strong baselines on InterCode-SQL and BIRD-SQL and ports across models unharmed, but is misinformation on context-dependent ALFWorld, where aggressive injection is monotonically harmful (0.460 to 0.347).",
       image: "",
