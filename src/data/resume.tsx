@@ -312,21 +312,11 @@ export const DATA = {
   publications: [
     {
       title:
-        "PRAXIS: Principled Reasoning via Agentic eXploration at Inference-time Scale",
+        "Beyond Aggregate MRR: Diagnosing Head-Tail Retrieval Failure in Multilingual Inductive Knowledge Graph Completion",
       dates: "2026",
-      location: "Under Review, EMNLP 2026 Workshop",
+      location: "Under Review, ECIR 2027",
       description:
-        "A training-free inference-time scaling framework that generates N trajectories under N distinct cognitive lenses, each grounded in a documented agent failure mode or in linguistic pragmatic theory (Grice's Maxims, Speech Act Theory). Achieves Oracle@16 of 0.993 on 150 real ABCD conversations with log-linear scaling, outperforming temperature sampling by 12-17 pp (exact McNemar p=0.0013), and identifies a false-consensus failure mode where random sampling degrades by 16.6 pp at N=16 while PRAXIS stays stable.",
-      image: "",
-      links: [],
-    },
-    {
-      title:
-        "When Is It Safe to Replay a Constructed Failure Knowledge Base? Context-Invariance as the Deciding Property",
-      dates: "2026",
-      location: "Under Review, EMNLP 2026 Workshop",
-      description:
-        "FAILGROUND, a deterministic pipeline that mines each detected agent failure into a typed Failure-Provenance Triple inside a failure-aware knowledge graph, with no LLM-as-judge and no external KG calls. Establishes context-invariance as the property deciding when replay is safe: literal replay ties strong baselines on InterCode-SQL and BIRD-SQL and ports across models unharmed, but is misinformation on context-dependent ALFWorld, where aggressive injection is monotonically harmful (0.460 to 0.347).",
+        "DBP5L-Ind 1.0, a reconstruction of the five-language DBP-5L benchmark that keeps every identified cross-language equivalent within one partition and ranks every split-eligible candidate in the query's language. A supervised BGE-M3 dual-tower retriever has stable aggregate MRR across three concept-disjoint partitions and three seeds, but hides a large head-tail gap: N-1 relations carry about 93% of it, with head MRR of 8.81 against 41.61 for tails and the gold head in the unfiltered top 100 for only 35.35% of queries. The gap persists on the test split, under a second training recipe, and through five predeclared pilot interventions.",
       image: "",
       links: [],
     },
@@ -337,16 +327,6 @@ export const DATA = {
       location: "Under Review, AAAI 2027",
       description:
         "An LLM-free MCTS retriever replacing the LLM scorer with a cross-encoder compiled to OpenVINO IR, enabling deterministic CPU/NPU deployment at ~500ms latency with zero API calls at inference.",
-      image: "",
-      links: [],
-    },
-    {
-      title:
-        "WeamRAG: Path Flexible Beam Search for Hierarchical Knowledge Graph Retrieval",
-      dates: "2026",
-      location: "Under Review, EMNLP 2026",
-      description:
-        "A path-flexible hierarchical KG RAG framework combining Wu-Palmer-guided multi-seed beam search, a binary-lifting LCA index, and BM25 chunk fallback; achieves Tok-F1 of 0.421 (leading all graph-structured baselines) and a 94% pairwise LLM-judge win rate on MuSiQue (500 two-hop questions) at 0.95s retrieval over a 54,678-entity graph.",
       image: "",
       links: [],
     },
